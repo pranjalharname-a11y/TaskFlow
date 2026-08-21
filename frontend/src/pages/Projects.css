@@ -1,0 +1,140 @@
+.projects-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.projects-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.projects-header h1 {
+  margin: 0 0 6px;
+  font-size: 32px;
+}
+
+.projects-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.add-project-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-project-button:hover {
+  background: #1d4ed8;
+}
+
+.project-list {
+  display: grid;
+  gap: 18px;
+}
+
+.project-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-item h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.project-description {
+  color: #6b7280;
+  margin: 0 0 15px;
+}
+
+.project-meta {
+  display: flex;
+  gap: 20px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.view-project-button {
+  text-decoration: none;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 10px 16px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.view-project-button:hover {
+  background: #dbeafe;
+}
+
+.empty-projects,
+.projects-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-projects {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.empty-projects p {
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .projects-content {
+    padding: 25px 16px;
+  }
+
+  .projects-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .projects-header h1 {
+    font-size: 26px;
+  }
+
+  .project-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .view-project-button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
